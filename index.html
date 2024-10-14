@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Lista de Digimon</title>
+
+    <!-- Engloba todos os caracteres especiais -->
+    <meta charset="utf-8">
+
+    <!-- Inclui um arquivo CSS externo -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- Cabeçalho principal da página -->
+    <h1 class="h1">DIGIMON</h1>
+
+    <!-- Tabela que contém o formulário para entrada de dados -->
+    <table class="field">
+
+      <!-- Início do formulário com método POST que envia os dados para 'exibir.php' -->
+      <form method="post" action="exibir.php">
+        <tr>
+          <!-- Campo para o usuário digitar o nome do digimon -->
+          <td><h4>Digite o Nome do Digimon:</h4>
+
+            <input type="text" name="v1"> <!-- Input de texto com nome 'v1' -->
+          </td>
+          <td>OU</td>
+          <!-- Campo para o usuário digitar o level do digimon -->
+          <td><h4>Digite o Level do Digimon:</h4>
+            <input type="text" name="v2"> <!-- Input de texto com nome 'v2' para ser utilizado em outro arquivo -->
+          </td>
+        </tr>
+        <tr>
+          <!-- Botão de envio do formulário, que exibe "Buscar" -->
+          <td colspan="3" class="btnContainer"><p>
+            <input type="submit" value="Buscar"></p>
+          </td>
+        </tr>
+      </form>
+    </table>
+    <!-- Conjunto de elementos para facilitar a estilização da página -->
+    <fieldset class="efeito">
+      <!-- Link que redireciona para a página 'exibir.php' para mostrar a lista de Digimon -->
+      <a href="exibir.php">Exibir Lista</a>
+    </fieldset>
+  </body>
+</html>
